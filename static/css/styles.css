@@ -1,0 +1,468 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --gris: #757575;
+    --grisclaro: #efefef;
+    --primario: #F7B50D;
+    --secundario: #0E2A47;
+
+}
+
+/*Generales*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--grisclaro);
+    color: var(--secundario)
+}
+
+/*Tipografia*/
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.btn {
+    background-color: var(--primario);
+    color: var(--blanco);
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: .5rem;
+}
+
+a.btn {
+    color: var(--blanco);
+}
+
+
+a {
+    transition: color 0.3s ease;
+    color: var(--secundario);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--secundario);
+}
+
+.container {
+    max-width: 120rem;
+    margin: auto;
+}
+
+header {
+    background-color: var(--blanco);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+header a {
+    padding: .5rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--oscuro);
+}
+
+header a:hover {
+    color: var(--primario);
+}
+
+#hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    padding: 2rem 5rem;
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.856),
+            rgba(7, 15, 24, 0.856)),
+        url("../img/big_data2.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    color: var(--blanco);
+
+}
+
+#hero .container {
+    display: flex;
+}
+
+#hero h1 {
+    font-family: 'Rufina', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#hero p {
+    margin-bottom: 5rem;
+}
+
+#nosotros .container {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#nosotros .left {
+    padding: 0 2rem;
+}
+
+#nosotros .right {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.856),
+            rgba(7, 15, 24, 0.856));
+    color: var(--blanco);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+#nosotros .right .container {
+    padding: 1rem 0;
+}
+
+#nosotros .actividad {
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    padding: 5rem 0;
+    margin: 2rem;
+    border-radius: 1.5rem;
+}
+
+#nosotros .actividad h4 {
+    color: var(--primario);
+}
+
+
+.actividad:nth-child(1) {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.7),
+            rgba(7, 15, 24, 0.7)),
+        url("../img/A-software.png");
+}
+
+.actividad:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.7),
+            rgba(7, 15, 24, 0.7)),
+        url("../img/A-panels-solars.png");
+}
+
+.actividad:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.7),
+            rgba(7, 15, 24, 0.7)),
+        url("../img/A-plans-constructions.png");
+}
+
+#plataformas {
+    color: var(--blanco);
+    text-align: center;
+}
+
+#plataformas .container {
+    padding: 2rem 0;
+}
+
+#plataformas .btn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+#plataformas h1 {
+    color: var(--secundario);
+    margin-top: 0;
+}
+
+#plataformas p {
+    padding: 1rem;
+}
+
+#plataformas .card {
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    padding: 5rem;
+    margin: 2rem;
+    border-radius: 1.5rem;
+}
+
+.card:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.7),
+            rgba(7, 15, 24, 0.7)),
+        url("../img/P_Fama.png");
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.7),
+            rgba(7, 15, 24, 0.7)),
+        url("../img/P_Montana.png");
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.7),
+            rgba(7, 15, 24, 0.7)),
+        url("../img/P_Systems.jpg");
+
+}
+
+#plataformas img{
+    display: none;
+}
+
+#contacto .container {
+    text-align: center;
+    padding: 5rem 1.5rem;
+}
+
+.contact-form input {
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    height: 3rem;
+    padding: .5rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    height: 10rem;
+    padding: 1.5rem 1rem;
+    resize: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.footer {
+    padding: 8rem 0 0 0;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.social-links a {
+    margin: 0 1rem;
+}
+
+.social {
+    height: 3rem;
+    width: 3rem;
+    background:var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.made-with {
+    padding: .5rem 3rem;
+    color: #555;
+}
+
+@media (min-width: 720px) {
+    header {
+        box-shadow: .3rem 0 .5rem var(--gris);
+        padding: 0 2rem;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 1.5rem;
+        justify-content: space-between;
+    }
+
+    #hero {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        background-color: var(--secundario);
+        background-image: none;
+        color: var(--blanco);
+        padding: 2rem 3rem;
+        justify-content: center;
+
+    }
+
+    #hero .hero-presentacion {
+        width: 60%;
+        max-width: 60rem;
+        text-align: initial;
+        padding-left: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    #hero .img-presentacion {
+        background-image: url("../img/big_data2.png");
+        background-size: cover;
+        background-position: center center;
+        height: 35rem;
+        width: 35rem;
+    }
+
+    #hero .btn {
+        text-align: center;
+        align-items: center;
+        width: 15rem;
+    }
+
+    #hero p {
+        color: var(--blanco);
+    }
+
+    #nosotros .left p{
+        text-align: initial;
+    }
+
+    #nosotros .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #nosotros .right {
+        background-image: none;
+    }
+
+    #nosotros .right h1 {
+        color: var(--secundario);
+    }
+
+    #nosotros .right p {
+        color: var(--blanco);
+    }
+
+    #nosotros {
+        box-shadow: var(--grisclaro);
+        border: solid .1rem #ddd;
+    }
+
+    #nosotros .actividad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #plataformas .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: .5rem;
+    }
+
+    #plataformas .card {
+        background-color: var(--blanco);
+        box-shadow: 0 .1rem .2rem var(--blanco);
+        border: solid .1rem #ddd;
+        border-radius: .5rem;
+        padding: 2rem 3rem;
+        background-image: none;
+    }
+
+    #plataformas h3,p {
+        color: var(--secundario);
+    }
+
+    #plataformas img{
+        display: block;
+        border: solid .1rem #ddd;
+    }
+
+    #plataformas .img-pltf{
+        display: grid;
+        place-items: center;
+    }
+
+    #contacto .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contacto .vert-pad {
+        padding: 2rem 0;
+    }
+
+    #contacto .left {
+        width: 60rem;
+        align-self: center;
+    }
+
+    #contacto .padded {
+        padding: 2rem 3rem;
+    }
+}
