@@ -25,3 +25,5 @@ jobs:
           action: "upload"
           app_location: "/"               # Aquí está tu index.html
           output_location: ""            # No hay carpeta de salida
+          app_build_command: 'echo "No build step required"'
+          skip_app_build: true           # No es necesario construir la aplicación
