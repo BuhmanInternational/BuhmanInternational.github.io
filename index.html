@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
 <body>
@@ -60,26 +61,33 @@
                         Instalaciones Tecnológicas (Autoconsumo-Paneles solares,
                         Energía-Electricidad) e Ingeniería y Construcción (Planos).
                     </p>
-                    <h1>Misión</h1>
+                    <h3>Misión</h3>
                     <p>
                         Hacer más fácil la gestión de recursos de nuestros clientes con nuestras soluciones
                         tecnológicas.
                     </p>
-                    <h1>Visión</h1>
+                    <h3>Visión</h3>
                     <p>Ser el líder y principal socio que aporta al crecimiento y consolidación de los pequeños
                         negocios
                         a nivel de país y extranjero con sistemas tecnológicos a la medida.</p>
-                    <h1>Valores</h1>
+                    <h3>Valores</h3>
                     <ul>
-                        <li>✅ Respeto</li>
-                        <li>✅ Compromiso</li>
-                        <li>✅ Proactividad</li>
-                        <li>✅ Organización</li>
-                        <li>✅ Innovación</li>
+                        <li style="text-align: left;">✅ Respeto</li>
+                        <li style="text-align: left;">✅ Compromiso</li>
+                        <li style="text-align: left;">✅ Proactividad</li>
+                        <li style="text-align: left;">✅ Organización</li>
+                        <li style="text-align: left;">✅ Innovación</li>
                     </ul>
 
-                    <p>¡Agenda una plática! Solo envíame un correo <a class="oro" href="#contact">haciendo clic
-                            aquí</a></p>
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li style="text-align: left;"><i class="fas fa-laptop-code"></i> Desarrollo de Software</li>
+                        <li style="text-align: left;"><i class="fas fa-house-laptop"></i> Sistemas SaaS</li>
+                        <li style="text-align: left;"><i class="fas fa-handshake"></i> Consultoría IT</li>
+                        <li style="text-align: left;"><i class="fas fa-headset"></i> Soporte Técnico 24/7</li>
+                    </ul>
+
+                    <p>¡Agenda una plática! Solo envíame un correo a <a href="#">projects@buhmancompany.com</a></p>
                 </div>
 
                 <div class="right">
@@ -115,7 +123,8 @@
 
     <section id="plataformas">
         <div class="container">
-            <h1>Nuestras Plataformas SaaS Construidas</h1>
+            <h1>Nuestras Plataformas Desarrolladas</h1>
+            <p>Accede en cualquier momento, dispositivo y parte del mundo</p>
         </div>
         <div class="container">
             <div class="row">
@@ -124,11 +133,15 @@
                     <div class="img-pltf">
                         <img src="static/img/P_Fama.png" alt="" width=300px>
                     </div>
-                    <p>Sistema web de gestión de ventas y reservas
-                        para salas de juego (mesas de billar, poker, sapo, dardo, genga, dominó, cachito, fulbito)
+                    <p>Sistema web para gestión de ventas de artículos y reservas de mesas de juego
+                        (billar, póker, sapo, dardo, jenga, dominó, cachito, fulbito)
                         o negocios de venta de toda índole de productos.
                     </p>
-                    <a class="btn" href="#">Link aquí</a>
+                    <hr>
+                    <p>Manejo de invetario, colaboradores, tiempo de las reservas de las mesas,
+                        clientes, venta de artículos, reportes, dashboard, boletas y facturas.
+                    </p>
+                    <a class="btn" href="#contacto">Más detalle</a>
                 </div>
                 <div class="card">
                     <h3>Montana</h3>
@@ -136,20 +149,28 @@
                         <img src="static/img/P_Montana.png" alt="" width=300px>
                     </div>
                     <p>
-                        Sistema web de gestión de RRHH (fichas, asistencia, turnos, horarios, evaluaciones,
-                        fotochecks)
+                        Sistema web de gestión de RRHH. Contiene los siguientes módulos:
+                        Atracción, Selección, Incorporación, Compensaciones, Desarrollo y Salida.
                     </p>
-                    <a class="btn" href="#">Link aquí</a>
+                    <hr>
+                    <p>Ofertas Laborales, Postulaciones, Entrevistas,
+                        Evaluaciones Médicas y Psicológicas, Inducciones,
+                        Evaluaciones de Desempeño, Planilla, Compensaciones, Beneficios, Asistencia,
+                        LBS y desvinculaciones.
+                    </p>
+                    <a class="btn" href="#contacto">Más detalle</a>
                 </div>
                 <div class="card">
-                    <h3>Sistemas a la medida del cliente</h3>
+                    <h3>+ Sistemas</h3>
                     <div class="img-pltf">
                         <img src="static/img/P_Systems.jpg" alt="" width=300px height="160px">
                     </div>
                     <p>
                         Diseño, elaboración, implementación de todo tipo sistema, según requerimientos del cliente.
                     </p>
-                    <a class="btn" href="#">Link aquí</a>
+                    <hr>
+                    <p>Instalaciones, configuraciones y mantenimiento de equipos tecnológicos</p>
+                    <a class="btn" href="#contacto">Más detalle</a>
                 </div>
             </div>
         </div>
@@ -163,47 +184,58 @@
                     <h1>Contáctanos</h1>
                     <p>Trabajemos juntos...</p>
                 </div>
-                <div class="right padded">
+                <div class="left padded">
+                    <!--
                     <form class="contact-form" method="post" action="consultas.buhman@gmail.com">
                         <input name="name" placeholder="Nombre" required type="text">
                         <input name="email" placeholder="Correo" required type="email">
                         <textarea name="messaje" placeholder="Mensaje" required minlength="10"></textarea>
                         <button class="btn full-width">Enviar</button>
                     </form>
+                    -->
+                    <h5 style="text-align: left;"><i class="fa-solid fa-phone"></i>: +51 940614160</h5>
+                    <h5 style="text-align: left;"><i class="fa-solid fa-envelope"></i> Para Proyectos:
+                        projects@buhmancompany.com</h5>
+                    <h5 style="text-align: left;"><i class="fa-solid fa-envelope"></i> Para Soporte:
+                        consultas@buhmancompany.com</h5>
+                    <h5 style="text-align: left;"><i class="fa-solid fa-home"></i> https://buhmancompany.com</h5>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="footer">
-        <div class="center full-width">
-            <div class="row">
-                <h3>Síguenos</h3>
-            </div>
-        </div>
-        <div class="center full-width">
-            <div class="row">
-                <p>También puedes seguirnos en nuestras redes sociales.</p>
-            </div>
-        </div>
-        <div class="center full-width social-links">
-            <div class="row">
-                <a href="https://www.linkedin.com/company/buhman-it" target="_blank">
-                    <img class="social" src="static/img/i-linkedin.png" alt="">
-                </a>
-                <a href="https://www.facebook.com/buhman.international" target="_blank">
-                    <img class="social" src="static/img/i-facebook.png" alt="">
-                </a>
-                <a href="https://buhmaninternational.github.io/" target="_blank">
-                    <img class="social" src="static/img/i-twitter.png" alt="">
-                </a>
 
+            
+            <div class="center full-width">
+                <div class="row">
+                    <h3>Síguenos</h3>
+                </div>
             </div>
-        </div>
+            <div class="center full-width">
+                <div class="row">
+                    <h5>También puedes seguirnos en nuestras redes sociales.</h5>
+                </div>
+            </div>
+            <div class="center full-width social-links">
+                <div class="row">
+                    <a href="https://www.linkedin.com/company/buhman-it" target="_blank">
+                        <img class="social" src="static/img/i-linkedin.png" alt="">
+                    </a>
+                    <a href="https://web.facebook.com/buhman.iternational" target="_blank">
+                        <img class="social" src="static/img/i-facebook.png" alt="">
+                    </a>
+                    <a href="https://www.tiktok.com/@buhman.company" target="_blank">
+                        <img class="social" src="static/img/i-tktk.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+
         <div class="made-with">
             <div class="row">
-                <p>Copyright © Bühman International Technologies 2025.
-                </p>
+                <h5>Copyright © Bühman International Technologies 2025.
+                </h5>
             </div>
         </div>
     </div>
