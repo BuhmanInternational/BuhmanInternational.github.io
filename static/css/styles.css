@@ -5,6 +5,7 @@
     --grisclaro: #efefef;
     --primario: #F7B50D;
     --secundario: #0E2A47;
+    --spacing: .25rem;
 
 }
 
@@ -41,6 +42,14 @@ h4 {
     font-size: 1.3rem;
 }
 
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: 0.5rem;
+}
+
 p {
     font-size: 1rem;
 }
@@ -49,6 +58,10 @@ ul {
     list-style: none;
 }
 
+.resaltado {
+    color: var(--primario);
+    font-weight: bold;
+}
 
 .btn {
     background-color: var(--primario);
@@ -56,6 +69,26 @@ ul {
     border: none;
     padding: 1.5rem 3rem;
     border-radius: .5rem;
+}
+
+.btn_transparent {
+    background-color: transparent;
+    color: var(--blanco);
+    padding: 1.3rem 3rem;
+    border-radius: .5rem;
+    border: solid var(--primario);
+}
+
+.btn_transparent:hover {
+    color: var(--primario);
+}
+
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 a.btn {
@@ -86,8 +119,8 @@ header {
 header .logo {
     display: flex;
     align-items: center;
-    padding: 2rem 2rem;
-    font-size: 2rem;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
 }
 
 header .container {
@@ -127,7 +160,7 @@ header a:hover {
     background-image: linear-gradient(0deg,
             rgba(7, 15, 24, 0.856),
             rgba(7, 15, 24, 0.856)),
-        url("../img/big_data2.png");
+        url("../img/FondoTrabajoBuhman.png");
     background-repeat: none;
     background-size: cover;
     background-position: center center;
@@ -152,14 +185,14 @@ header a:hover {
 
 #nosotros .container {
     text-align: center;
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 #nosotros .left {
     padding: 0 2rem;
 }
 
-#nosotros .right {
+#nosotros .row-valores {
     background-image: linear-gradient(0deg,
             rgba(7, 15, 24, 0.856),
             rgba(7, 15, 24, 0.856));
@@ -168,11 +201,22 @@ header a:hover {
     padding: 0 2rem;
 }
 
-#nosotros .right .container {
-    padding: 1rem 0;
+#nosotros .indicadores {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: calc(var(--spacing)*6);
+    padding: calc(var(--spacing)*4);
 }
 
-#nosotros .actividad {
+
+#actividades .container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+#actividades .card-actividad {
     background-repeat: none;
     background-size: cover;
     background-position: center center;
@@ -181,26 +225,29 @@ header a:hover {
     border-radius: 1.5rem;
 }
 
-#nosotros .actividad h4 {
+#actividades .card-actividad h4 {
     color: var(--primario);
 }
 
+#actividades .card-actividad p {
+    color: var(--blanco);
+}
 
-.actividad:nth-child(1) {
+.card-actividad:nth-child(1) {
     background-image: linear-gradient(0deg,
             rgba(7, 15, 24, 0.7),
             rgba(7, 15, 24, 0.7)),
         url("../img/A-software.png");
 }
 
-.actividad:nth-child(2) {
+.card-actividad:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(7, 15, 24, 0.7),
             rgba(7, 15, 24, 0.7)),
         url("../img/A-panels-solars.png");
 }
 
-.actividad:nth-child(3) {
+.card-actividad:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(7, 15, 24, 0.7),
             rgba(7, 15, 24, 0.7)),
@@ -208,11 +255,11 @@ header a:hover {
 }
 
 #plataformas {
-    color: var(--blanco);
     text-align: center;
 }
 
 #plataformas .container {
+    text-align: center;
     padding: 2rem 0;
 }
 
@@ -226,8 +273,14 @@ header a:hover {
     margin-top: 0;
 }
 
-#plataformas p {
+#plataformas h3 {
+    color: var(--blanco);
+    margin-top: 0;
+}
+
+#plataformas .card p {
     padding: 1rem;
+    color: var(--blanco);
 }
 
 #plataformas .card {
@@ -239,7 +292,7 @@ header a:hover {
     border-radius: 1.5rem;
 }
 
-.card:first-child {
+.card:nth-child(1) {
     background-image: linear-gradient(0deg,
             rgba(7, 15, 24, 0.7),
             rgba(7, 15, 24, 0.7)),
@@ -261,13 +314,29 @@ header a:hover {
 
 }
 
-#plataformas img{
+#plataformas img {
     display: none;
+}
+
+#contacto {
+    background-image: linear-gradient(0deg,
+            rgba(7, 15, 24, 0.856),
+            rgba(7, 15, 24, 0.856)),
+        url("../img/FondoBuhman.png");
+    background-repeat: none;
+    background-size: cover;
+    padding: 2rem 3rem;
+    color: var(--blanco);
+
 }
 
 #contacto .container {
     text-align: center;
     padding: 1rem 1.5rem;
+}
+
+#contacto p {
+    color: var(--primario);
 }
 
 .contact-form input {
@@ -314,7 +383,7 @@ header a:hover {
 .social {
     height: 3rem;
     width: 3rem;
-    background:var(--blanco);
+    background: var(--blanco);
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -365,15 +434,18 @@ header a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
     }
-    
+
     #hero .img-presentacion {
-        background-image: url("../img/big_data2.png");
+        background-image: url("../img/FondoTrabajoBuhman.png");
         background-size: cover;
         background-position: center center;
         height: 35rem;
         width: 35rem;
+        object-fit: cover;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
     }
 
     #hero .btn {
@@ -382,11 +454,39 @@ header a:hover {
         width: 15rem;
     }
 
+    #hero .contenedor-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
     #hero p {
         color: var(--blanco);
     }
 
-    #nosotros .left p{
+    #nosotros {
+        box-shadow: var(--grisclaro);
+        border: solid .1rem #ddd;
+    }
+
+    .linea_vertical {
+        border-right: solid .1rem var(--gris);
+        padding-right: calc(var(--spacing)*4);
+    }
+
+    #nosotros .img-nosotros {
+        background-image: url("../img/MarcacionMateo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 30rem;
+        width: 40rem;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    }
+
+    #nosotros .left p {
         text-align: initial;
     }
 
@@ -400,29 +500,67 @@ header a:hover {
         background-image: none;
     }
 
-    #nosotros .right h1 {
+    #nosotros .right h3 {
         color: var(--secundario);
     }
 
     #nosotros .right p {
+        color: var(--secundario);
+        text-align: justify;
+    }
+
+    #nosotros .row-valores {
+        background-image: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+        color: var(--secundario);
+    }
+
+    #nosotros .card-valores {
+        border-radius: 1rem;
+        padding: 2rem 3rem;
+        background-image: none;
+    }
+
+    #actividades {
+        position: relative;
+        z-index: 1;
+        background-color: var(--secundario);
+        background-image: none;
         color: var(--blanco);
+        padding: 2rem 3rem;
+
     }
 
-    #nosotros {
-        box-shadow: var(--grisclaro);
-        border: solid .1rem #ddd;
+
+    #actividades .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
     }
 
-    #nosotros .actividad {
-        display: flex;
-        flex-direction: column;
+    #actividades .card-actividad {
         align-items: center;
+    }
+
+    #actividades p {
+        color: var(--blanco);
     }
 
     #plataformas .row {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: .5rem;
+    }
+
+    #plataformas .card h3,
+    p {
+        color: var(--secundario);
+    }
+
+    #plataformas .card p {
+        color: var(--secundario);
     }
 
     #plataformas .card {
@@ -434,16 +572,12 @@ header a:hover {
         background-image: none;
     }
 
-    #plataformas h3,p {
-        color: var(--secundario);
-    }
-
-    #plataformas img{
+    #plataformas img {
         display: block;
         border: solid .1rem #ddd;
     }
 
-    #plataformas .img-pltf{
+    #plataformas .img-pltf {
         display: grid;
         place-items: center;
     }
