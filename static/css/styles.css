@@ -108,8 +108,10 @@ a:hover {
 }
 
 .container {
+    width: 95%;
     max-width: 120rem;
-    margin: auto;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 header {
@@ -221,7 +223,7 @@ header a:hover {
     background-size: cover;
     background-position: center center;
     padding: 5rem 0;
-    margin: 2rem;
+    margin: 0.5rem;
     border-radius: 1.5rem;
 }
 
@@ -288,7 +290,7 @@ header a:hover {
     background-size: cover;
     background-position: center center;
     padding: 5rem;
-    margin: 2rem;
+    margin: 0.5rem;
     border-radius: 1.5rem;
 }
 
@@ -554,8 +556,7 @@ header a:hover {
         column-gap: .5rem;
     }
 
-    #plataformas .card h3,
-    p {
+    #plataformas .card h3 {
         color: var(--secundario);
     }
 
