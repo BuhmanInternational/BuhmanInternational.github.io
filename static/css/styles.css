@@ -194,8 +194,8 @@ header a:hover {
 }
 
 #nosotros .right p {
-        text-align: justify;
-    }
+    text-align: justify;
+}
 
 #nosotros .row-valores {
     background-image: linear-gradient(0deg,
@@ -216,8 +216,8 @@ header a:hover {
 
 #nosotros .img-valores {
     display: flex;
-      justify-content: center;
-      align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #nosotros .img-valores .icono-valores {
@@ -226,8 +226,8 @@ header a:hover {
     border-radius: 0.5rem;
 }
 
-#nosotros li{
-    list-style-type:disc;
+#nosotros li {
+    list-style-type: disc;
 }
 
 
@@ -451,7 +451,7 @@ header a:hover {
         width: 60%;
         max-width: 60rem;
         text-align: initial;
-        padding-left: 2rem;
+        padding-left: 0.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -459,14 +459,40 @@ header a:hover {
     }
 
     #hero .img-presentacion {
-        background-image: url("../img/FondoTrabajoBuhman.png");
-        background-size: cover;
-        background-position: center center;
-        height: 30rem;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        height: 35rem;
         width: 35rem;
-        object-fit: cover;
+        overflow: hidden;
         border-top-left-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
+
+
+    }
+
+    #hero .deslizar {
+        display: flex;
+        width: max-content;
+        /* El ancho se ajusta al contenido (todas las imágenes) */
+        animation: carrusel-movimiento 20s linear infinite;
+    }
+
+    #hero .deslizar:hover {
+        animation-play-state: paused;
+    }
+
+    /* Define la animación del movimiento del carrusel */
+    @keyframes carrusel-movimiento {
+        from {
+            transform: translateX(0%);
+            /* Empieza en la posición original */
+        }
+
+        to {
+            transform: translateX(-50%);
+            /* Se desplaza la mitad del contenido total para volver al inicio del bucle */
+        }
     }
 
     #hero .btn {
@@ -551,9 +577,9 @@ header a:hover {
         text-align: center;
     }
 
-    #nosotros li{
-    text-align: justify;
-}
+    #nosotros li {
+        text-align: justify;
+    }
 
     #actividades {
         position: relative;
