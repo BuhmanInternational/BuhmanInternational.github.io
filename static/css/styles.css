@@ -158,19 +158,64 @@ header a:hover {
     flex-direction: column;
     height: 90vh;
     padding: 2rem 5rem;
-    background-image: linear-gradient(0deg,
-            rgba(7, 15, 24, 0.856),
-            rgba(7, 15, 24, 0.856)),
-        url("../img/FondoTrabajoBuhman.png");
-    background-repeat: none;
-    background-size: cover;
-    background-position: center center;
+    background-color: var(--secundario);
     color: var(--blanco);
-
 }
 
 #hero .container {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#hero .hero-presentacion {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#hero .img-presentacion {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    height: 20rem;
+    width: 100%;
+    max-width: 20rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+#hero .deslizar {
+    display: flex;
+    width: max-content;
+    animation: carrusel-movimiento-mobile 18s ease-in-out infinite;
+}
+
+#hero .deslizar img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+#hero .deslizar:hover {
+    animation-play-state: paused;
+}
+
+/* Animación del carrusel para móvil */
+@keyframes carrusel-movimiento-mobile {
+    0%, 5% {
+        transform: translateX(0);
+    }
+    30%, 35% {
+        transform: translateX(-20rem);
+    }
+    60%, 65% {
+        transform: translateX(-40rem);
+    }
+    95%, 100% {
+        transform: translateX(0);
+    }
 }
 
 #hero h1 {
@@ -414,6 +459,239 @@ header a:hover {
     color: #555;
 }
 
+/* RESPONSIVE MÓVIL PEQUEÑO (hasta 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    #hero {
+        height: auto;
+        min-height: 70vh;
+        padding: 3rem 1.5rem;
+    }
+
+    #hero .img-presentacion {
+        height: 15rem;
+        max-width: 15rem;
+    }
+
+    #hero .deslizar {
+        animation: carrusel-movimiento-small 18s ease-in-out infinite;
+    }
+
+    #hero .deslizar img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    @keyframes carrusel-movimiento-small {
+        0%, 5% {
+            transform: translateX(0);
+        }
+        30%, 35% {
+            transform: translateX(-15rem);
+        }
+        60%, 65% {
+            transform: translateX(-30rem);
+        }
+        95%, 100% {
+            transform: translateX(0);
+        }
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .btn_transparent {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .contenedor-btn {
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    #nosotros .indicadores {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #nosotros .linea_vertical {
+        border-right: none;
+        border-bottom: solid .1rem var(--gris);
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+
+    #contacto {
+        padding: 2rem 1rem;
+    }
+
+    .social {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+/* RESPONSIVE MÓVIL MEDIANO (481px - 719px) */
+@media (min-width: 481px) and (max-width: 719px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #hero {
+        height: auto;
+        min-height: 75vh;
+        padding: 3rem 2rem;
+    }
+
+    #hero .img-presentacion {
+        height: 18rem;
+        max-width: 18rem;
+    }
+
+    #hero .deslizar {
+        animation: carrusel-movimiento-medium 18s ease-in-out infinite;
+    }
+
+    #hero .deslizar img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    @keyframes carrusel-movimiento-medium {
+        0%, 5% {
+            transform: translateX(0);
+        }
+        30%, 35% {
+            transform: translateX(-18rem);
+        }
+        60%, 65% {
+            transform: translateX(-36rem);
+        }
+        95%, 100% {
+            transform: translateX(0);
+        }
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #nosotros .indicadores {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    #actividades .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #plataformas .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* RESPONSIVE TABLET (720px - 1024px) */
+@media (min-width: 720px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    #hero .hero-presentacion {
+        width: 50%;
+    }
+
+    #hero .img-presentacion {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    #hero .deslizar {
+        animation: carrusel-movimiento-tablet 18s ease-in-out infinite;
+    }
+
+    #hero .deslizar img {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    @keyframes carrusel-movimiento-tablet {
+        0%, 5% {
+            transform: translateX(0);
+        }
+        30%, 35% {
+            transform: translateX(-28rem);
+        }
+        60%, 65% {
+            transform: translateX(-56rem);
+        }
+        95%, 100% {
+            transform: translateX(0);
+        }
+    }
+
+    #nosotros .img-nosotros {
+        width: 100%;
+        height: 25rem;
+    }
+
+    #nosotros .row {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #nosotros .row-valores {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #actividades .row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #plataformas .row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #contacto .row {
+        flex-direction: column;
+    }
+
+    #contacto .left {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVE DESKTOP (desde 720px) */
 @media (min-width: 720px) {
     header {
         box-shadow: .3rem 0 .5rem var(--gris);
@@ -444,7 +722,10 @@ header a:hover {
         color: var(--blanco);
         padding: 2rem 3rem;
         justify-content: center;
+    }
 
+    #hero .container {
+        flex-direction: row;
     }
 
     #hero .hero-presentacion {
@@ -455,7 +736,7 @@ header a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        margin-bottom: 0;
     }
 
     #hero .img-presentacion {
@@ -464,34 +745,42 @@ header a:hover {
         margin: 0;
         height: 35rem;
         width: 35rem;
+        max-width: 35rem;
         overflow: hidden;
         border-top-left-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
-
-
     }
 
     #hero .deslizar {
         display: flex;
         width: max-content;
-        /* El ancho se ajusta al contenido (todas las imágenes) */
-        animation: carrusel-movimiento 20s linear infinite;
+        animation: carrusel-movimiento 18s ease-in-out infinite;
+    }
+
+    #hero .deslizar img {
+        width: 35rem;
+        height: 35rem;
+        object-fit: cover;
+        flex-shrink: 0;
     }
 
     #hero .deslizar:hover {
         animation-play-state: paused;
     }
 
-    /* Define la animación del movimiento del carrusel */
+    /* Animación del carrusel sin duplicar imágenes */
     @keyframes carrusel-movimiento {
-        from {
-            transform: translateX(0%);
-            /* Empieza en la posición original */
+        0%, 5% {
+            transform: translateX(0);
         }
-
-        to {
-            transform: translateX(-50%);
-            /* Se desplaza la mitad del contenido total para volver al inicio del bucle */
+        30%, 35% {
+            transform: translateX(-35rem);
+        }
+        60%, 65% {
+            transform: translateX(-70rem);
+        }
+        95%, 100% {
+            transform: translateX(0);
         }
     }
 
@@ -657,5 +946,28 @@ header a:hover {
     #contacto .padded {
         padding: 2rem 3rem;
         text-align: left
+    }
+}
+
+/* RESPONSIVE DESKTOP GRANDE (desde 1025px) */
+@media (min-width: 1025px) {
+    #nosotros .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #nosotros .row-valores {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #actividades .row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #plataformas .row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #contacto .row {
+        flex-direction: row;
     }
 }
