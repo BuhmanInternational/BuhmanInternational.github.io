@@ -366,18 +366,21 @@ header a:hover {
     margin-top: 2rem;
 }
 
+#nosotros .row-valores .card-valores h3 {
+    text-align: center;
+}
+
 #nosotros .indicadores {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     gap: 2rem;
     padding: 2rem 1rem;
     flex-wrap: wrap;
 }
 
-#nosotros .indicadores > div {
-    min-width: 100px;
+#nosotros .indicadores .linea_vertical p{
+    text-align: center;
 }
 
 #nosotros .img-valores {
@@ -415,6 +418,14 @@ header a:hover {
     text-align: center;
 }
 
+#actividades .container h1{
+    color: var(--blanco);
+}
+
+#actividades .container p{
+    color: var(--blanco);
+}
+
 #actividades .card-actividad {
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,10 +445,6 @@ header a:hover {
 #actividades .card-actividad h4 {
     color: var(--primario);
     margin-bottom: 1rem;
-}
-
-#actividades .card-actividad p {
-    color: var(--blanco);
 }
 
 .card-actividad:nth-child(1) {
@@ -496,6 +503,7 @@ header a:hover {
 #plataformas .card p {
     padding: 1rem 0;
     color: var(--blanco);
+    text-align: justify;
 }
 
 .card:nth-child(1) {
@@ -676,6 +684,7 @@ header a:hover {
     #nosotros .indicadores {
         flex-direction: column;
         gap: 1.5rem;
+        text-align: center;
     }
 
     #nosotros .linea_vertical {
