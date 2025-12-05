@@ -167,12 +167,15 @@ a:focus {
 header {
     background-color: var(--blanco);
     transition: box-shadow var(--transition-speed) ease;
+    position: relative;
+    z-index: 100;
 }
 
 header .logo {
     display: flex;
     align-items: center;
     padding: 1rem 1.5rem;
+    text-decoration: none;
 }
 
 header .logo img {
@@ -403,9 +406,23 @@ header a:hover {
 }
 
 #nosotros li {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+}
+
+#nosotros .card-valores li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    padding-left: 2rem;
+}
+
+#nosotros .card-valores li i {
+    color: var(--primario);
+    font-size: 1.1rem;
+    min-width: 1.2rem;
 }
 
 /* Actividades Section */
@@ -538,7 +555,7 @@ header a:hover {
     padding: 2rem 1rem;
 }
 
-#contacto p {
+#contacto > .container > div > .left.padded.linea_vertical > p {
     color: var(--primario);
     font-weight: 600;
 }
@@ -546,6 +563,30 @@ header a:hover {
 #contacto i {
     color: var(--primario);
     margin-right: 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info i {
+    color: var(--primario);
+    font-size: 1.2rem;
+    min-width: 1.5rem;
+}
+
+.contact-info p {
+    margin: 0;
+    color: var(--blanco);
+}
+
+.contact-info p.label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--blanco);
 }
 
 .contact-form input,
@@ -593,6 +634,10 @@ header a:hover {
 
 .footer h3, .footer h5 {
     margin-bottom: 1rem;
+}
+
+.footer > .center:first-of-type .row h3 {
+    color: var(--primario);
 }
 
 .social-links {
@@ -694,8 +739,28 @@ header a:hover {
         width: 100%;
     }
 
+    #nosotros .row-valores {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #nosotros .card-valores li {
+        padding-left: 6rem;
+        justify-content: start;
+    }
+
     #contacto {
         padding: 3rem 1rem;
+    }
+
+    #contacto .left.padded {
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+        padding: 0 1.5rem;
     }
 
     .social {
@@ -744,6 +809,16 @@ header a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+    }
+
+    #nosotros .row-valores {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #nosotros .card-valores li {
+        padding-left: 1.5rem;
     }
 
     #actividades .row,
@@ -816,6 +891,10 @@ header a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
+    }
+
+    #nosotros .card-valores li {
+        padding-left: 1.5rem;
     }
 
     #actividades .row,
@@ -933,6 +1012,16 @@ header a:hover {
 
     .linea_vertical:last-child {
         border-right: none;
+    }
+
+    #nosotros .row-valores {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    #nosotros .card-valores li {
+        padding-left: 2rem;
     }
 
     #nosotros .img-nosotros {
