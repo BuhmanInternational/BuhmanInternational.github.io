@@ -1,317 +1,460 @@
 <!DOCTYPE html>
-<html lang="es-es">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bühman International</title>
+    <title>B&uuml;hman | Sistemas para operaciones y RRHH</title>
+    <meta name="description"
+        content="B&uuml;hman desarrolla software para empresas con alta operaci&oacute;n diaria y negocios que necesitan control real en operaciones y RRHH.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Rufina:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="#hero" class="logo">
-                <img src="static/img/BuhmanLogoT.png" alt="Logo" width="150px">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="logo" aria-label="Ir al inicio de B&uuml;hman">
+                <img src="static/img/BuhmanLogoT.png" alt="Logo B&uuml;hman" width="148" height="54">
             </a>
-            <nav>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#actividades">Ámbito</a>
-                <a href="#plataformas">Plataformas</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+                aria-label="Abrir men&uacute;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="main-nav" aria-label="Navegaci&oacute;n principal">
+                <a href="#home">Home</a>
+                <a href="#solucion">Soluci&oacute;n</a>
+                <a href="#productos">Productos</a>
+                <a href="#fama">Fama</a>
+                <a href="#montana">Montana</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-presentacion">
-                <h1><span class="resaltado">Soluciones tecnológicas</span> <br>
-                    como herramientas de crecimiento</h1>
-                <p>
-                    Construimos software dinamico, seguro y a la vanguardia en combinación con la infraestructura
-                    acorde con su organización.</p>
-                <div class="contenedor-btn">
-                    <div class="left">
-                        <a href="#plataformas" class="btn">Plataformas</a>
-                    </div>
-                    <div class="right">
-                        <a href="#contacto" class="btn_transparent">Contáctame</a>
-                    </div>
-                </div>
-            </div>
-            <div class="img-presentacion">
-    <div class="deslizar">
-        <img src="static/img/FondoTrabajoBuhman.png" alt="img11">
-        <img src="static/img/P_Montana.png" alt="img22">
-        <img src="static/img/MarcacionMateo1.png" alt="img33">
-    </div>
-</div>
-        </div>
-    </section>
-
-    <section id="nosotros">
-        <div class="container">
-            <div>
-                <h1>Acerca de Nosotros</h1>
-                <p>Desarrollamos soluciones SaaS,
-                    nos dedicamos a transformar ideas innovadoras en plataformas digitales de alto rendimiento.</p>
-            </div>
-
-            <div class="row">
-                <div class="left">
-                    <div class="img-nosotros">
-                    </div>
-                </div>
-                <div class="right">
-                    <h3>Innovación que Impulsa el Crecimiento</h3>
-                    <p>Nos hemos comprometido a crear soluciones tecnológicas que no solo cumplan con las expectativas,
-                        sino que las superen. Nuestro enfoque se centra en <span class="resaltado">procesos 360°</span>
-                        (inicio-fin), la innovación continua y la satisfacción del
-                        cliente.</p>
-                    <p>
-                        Somos un equipo experimentado y apasionado de profesionales
-                        en elaboración de Desarrollo de Sistemas
-                        (Sistemas web y aplicativos móviles),
-                        Instalaciones Tecnológicas (Autoconsumo-Paneles solares,
-                        Energía-Electricidad) e Ingeniería y Construcción (Planos).
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">B&uuml;hman</p>
+                    <h1>Sistemas que ordenan <span class="hero-emphasis">Operaciones y Talento</span></h1>
+                    <p class="lead">
+                        En B&uuml;hman desarrollamos software para negocios con alta operaci&oacute;n diaria y empresas
+                        que
+                        necesitan control real en RRHH.
                     </p>
-                    <div class="indicadores">
-                        <div class="linea_vertical">
-                            <h3>2+</h3>
-                            <p>Plataformas</p>
+                    <div class="hero-actions">
+                        <a href="#fama" class="btn btn-secondary">Ver Fama</a>
+                        <a href="#montana" class="btn btn-secondary">Ver Montana</a>
+                    </div>
+                    <div class="hero-points">
+                        <span><i class="fa-solid fa-circle-check"></i> Operaci&oacute;n ordenada</span>
+                        <span><i class="fa-solid fa-circle-check"></i> RRHH con trazabilidad</span>
+                        <span><i class="fa-solid fa-circle-check"></i> Implementaci&oacute;n acompa&ntilde;ada</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card visual-main">
+                        <div class="visual-carousel" aria-label="Carrusel de soluciones B&uuml;hman">
+                            <div class="visual-track">
+                                <figure class="visual-slide slide-1 is-active">
+                                    <img src="static/img/FondoTrabajoBuhman.png"
+                                        alt="Equipo usando soluciones digitales">
+                                </figure>
+                                <figure class="visual-slide slide-2">
+                                    <img src="static/img/MarcacionMateo.jpg"
+                                        alt="Proceso operativo con control y marcaci&oacute;n">
+                                </figure>
+                                <figure class="visual-slide slide-3">
+                                    <img src="static/img/MarcacionMateo1.png"
+                                        alt="Operaci&oacute;n con herramientas digitales de B&uuml;hman">
+                                </figure>
+                            </div>
+                            <div class="visual-overlay"></div>
+                            <div class="visual-indicators" aria-hidden="true">
+                                <span class="indicator indicator-1 is-active"></span>
+                                <span class="indicator indicator-2"></span>
+                                <span class="indicator indicator-3"></span>
+                            </div>
                         </div>
-                        <div class="linea_vertical">
-                            <h3>1+</h3>
-                            <p>Años</p>
-                        </div>
-                        <div class="linea_vertical">
-                            <h3>10+</h3>
-                            <p>Clientes</p>
-                        </div>
-                        <div class="linea_vertical">
-                            <h3>24/7</h3>
-                            <p>Soporte</p>
-                        </div>
+                    </div>
+                    <div class="visual-card visual-float top">
+                        <span class="visual-label">Fama</span>
+                        <p>Reservas, consumo y ventas en un solo flujo.</p>
+                    </div>
+                    <div class="visual-card visual-float bottom">
+                        <span class="visual-label">Montana</span>
+                        <p>Selecci&oacute;n, onboarding y control interno con orden.</p>
                     </div>
                 </div>
             </div>
-            <div class="row-valores">
-                <div class="card-valores">
-                    <div class="img-valores">
-                        <img src="static/img/mision.svg" alt="" class="icono-valores">
-                    </div>
-                    <h3>Misión</h3>
-                    <p>
-                        Hacer más fácil la gestión de recursos de nuestros clientes con nuestras soluciones
-                        tecnológicas.
-                    </p>
-                </div>
-                <div class="card-valores">
-                    <div class="img-valores">
-                        <img src="static/img/vision.svg" alt="" class="icono-valores">
-                    </div>
-                    <h3>Visión</h3>
-                    <p>Ser el líder y principal socio que aporta al crecimiento y consolidación de los pequeños
-                        negocios
-                        a nivel de país y extranjero con sistemas tecnológicos a la medida.</p>
-                </div>
-                <div class="card-valores">
-                    <div class="img-valores">
-                        <img src="static/img/valores.svg" alt="" class="icono-valores">
-                    </div>
-                    <h3>Valores</h3>
-                    <ul>
-                        <li><i class="fas fa-handshake"></i> Respeto</li>
-                        <li><i class="fas fa-heart"></i> Compromiso</li>
-                        <li><i class="fas fa-rocket"></i> Proactividad</li>
-                        <li><i class="fas fa-tasks"></i> Organización</li>
-                        <li><i class="fas fa-lightbulb"></i> Innovación</li>
+        </section>
+
+        <section class="section section-soft">
+            <div class="container stack-grid">
+                <article class="info-panel">
+                    <p class="eyebrow">Problema</p>
+                    <h2>Muchas empresas crecen, pero su gesti&oacute;n sigue desordenada</h2>
+                    <ul class="feature-list">
+                        <li>Operaciones en Excel o manual.</li>
+                        <li>Reservas o ventas sin control.</li>
+                        <li>Procesos de RRHH poco estructurados.</li>
+                        <li>Informaci&oacute;n dispersa.</li>
                     </ul>
-                </div>
-                <div class="card-valores">
-                    <div class="img-valores">
-                        <img src="static/img/services.svg" alt="" class="icono-valores">
-                    </div>
-                    <h3>Servicios</h3>
-                    <ul>
-                        <li><i class="fas fa-laptop-code"></i> Desarrollo de Software</li>
-                        <li><i class="fas fa-house-laptop"></i> Sistemas SaaS</li>
-                        <li><i class="fas fa-handshake"></i> Consultoría IT</li>
-                        <li><i class="fas fa-headset"></i> Soporte Técnico 24/7</li>
+                    <p class="panel-note">Esto genera p&eacute;rdida de tiempo, errores y falta de control.</p>
+                </article>
+                <article id="solucion" class="info-panel accent-panel">
+                    <p class="eyebrow">Soluci&oacute;n</p>
+                    <h2>Creamos sistemas simples que organizan lo m&aacute;s importante del negocio</h2>
+                    <ul class="feature-list">
+                        <li>Operaciones: ventas, reservas y consumo.</li>
+                        <li>Talento: reclutamiento, onboarding y control interno.</li>
+                        <li>Entornos digitales claros y f&aacute;ciles de usar.</li>
                     </ul>
-                </div>
+                    <p class="panel-note">Todo en un solo entorno digital, claro y f&aacute;cil de usar.</p>
+                </article>
             </div>
-        </div>
-    </section>
-    <section id="actividades">
-        <div class="container">
-            <div>
-                <h1>Áreas de Actividad</h1>
-                <p>Sectores o ámbitos de actividad</p>
-            </div>
-            <div class="row">
-                <div class="card-actividad">
-                    <a href="#">
-                        <h4>Desarrollo de Todo tipo de Sistemas</h4>
-                    </a>
-                    <p>Sistemas web y aplicativos móviles</p>
-                </div>
+        </section>
 
-                <div class="card-actividad">
-                    <a href="#">
-                        <h4>Instalaciones Tecnológicas</h4>
-                    </a>
-                    <p>Autoconsumo-Paneles solares, Energía-Electricidad</p>
-                </div>
-
-                <div class="card-actividad">
-                    <a href="#">
-                        <h4>Ingeniería y Construcción</h4>
-                    </a>
-                    <p>Planos y Construcción</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="plataformas">
-
-        <div class="container">
-            <div>
-                <h1>Nuestras Plataformas Desarrolladas</h1>
-                <p>Accede en cualquier momento, dispositivo y parte del mundo</p>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <h3>Fama</h3>
-                    <div class="img-pltf">
-                        <img src="static/img/P_Fama.png" alt="" width=300px height="160px">
-                    </div>
-                    <p>Gestión de ventas y reservas de mesas de juego (billar, fulbito, poker, etc.) para negocios de toda índole.
-                    </p>
-                    <hr>
-                    <p>Módulos de inventario, colaboradores, reservas, clientes, reportes, dashboard, boletas y facturas.
-                    </p>
-                    <a class="btn" href="#contacto">Más detalle</a>
-                </div>
-                <div class="card">
-                    <h3>Montana</h3>
-                    <div class="img-pltf">
-                        <img src="static/img/P_Montana.png" alt="" width=300px height="160px">
-                    </div>
-                    <p>Sistema web de gestión de RRHH con módulos de atracción, selección, incorporación, compensaciones y desarrollo.
-                    </p>
-                    <hr>
-                    <p>Gestión de ofertas laborales, postulaciones, entrevistas, evaluaciones, planilla, beneficios y asistencia.
-                    </p>
-                    <a class="btn" href="#contacto">Más detalle</a>
-                </div>
-                <div class="card">
-                    <h3>+ Sistemas</h3>
-                    <div class="img-pltf">
-                        <img src="static/img/P_Systems.jpg" alt="" width=300px height="160px">
-                    </div>
+        <section id="productos" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Productos</p>
+                    <h2>Dos sistemas pensados para operaciones reales</h2>
                     <p>
-                        Diseño, elaboración, implementación de todo tipo sistema, según requerimientos del cliente.
+                        Dise&ntilde;amos soluciones espec&iacute;ficas para negocios que necesitan orden diario y
+                        empresas que
+                        requieren trazabilidad en RRHH.
                     </p>
-                    <hr>
-                    <p>Instalaciones, configuraciones y mantenimiento de equipos tecnológicos</p>
-                    <a class="btn" href="#contacto">Más detalle</a>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-media">
+                            <img src="static/img/P_Fama2.png" alt="Vista del sistema Fama">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-tag">Fama</span>
+                            <h3>Sistema para negocios con reservas, consumo y flujo diario</h3>
+                            <p>Ideal para billar, gaming, entretenimiento, restaurantes simples, bares y negocios con
+                                ventas directas.</p>
+                            <ul class="feature-list compact">
+                                <li>Reservas de mesas, espacios y turnos.</li>
+                                <li>Ventas, productos y control de consumo.</li>
+                                <li>Operaci&oacute;n centralizada con reportes claros.</li>
+                            </ul>
+                            <br>
+                            <a href="#fama" class="text-link">Ver Fama</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-media">
+                            <img src="static/img/P_Montana.png" alt="Vista del sistema Montana">
+                        </div>
+                        <div class="product-body">
+                            <span class="product-tag">Montana</span>
+                            <h3>Sistema de gesti&oacute;n de RRHH para miner&iacute;a y retail</h3>
+                            <p>Centraliza la gesti&oacute;n del personal desde el ingreso hasta la operaci&oacute;n con
+                                control y
+                                trazabilidad.</p>
+                            <ul class="feature-list compact">
+                                <li>Reclutamiento y Selecci&oacute;n.</li>
+                                <li>Onboarding y base estructurada de personal.</li>
+                                <li>Procesos internos: Asistencia-Marcaciones, Desempeño, Desarrollo, Beneficios,
+                                    Compensaciones y Offboarding</li>
+                            </ul>
+                            <br>
+                            <a href="#montana" class="text-link">Ver Montana</a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacto">
-        <div class="container">
-            <div class="row vert-pad">
-                <div class="left padded linea_vertical">
-                    <h1>Contáctanos</h1>
-                    <p>Trabajemos juntos...</p>
-                </div>
-                <div class="left padded">
-                    <!--
-                    <form class="contact-form" method="post" action="consultas.buhman@gmail.com">
-                        <input name="name" placeholder="Nombre" required type="text">
-                        <input name="email" placeholder="Correo" required type="email">
-                        <textarea name="messaje" placeholder="Mensaje" required minlength="10"></textarea>
-                        <button class="btn full-width">Enviar</button>
-                    </form>
-                    -->
-                    <div class="contact-info">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+51 940614160</p>
+        <section class="section section-dark">
+            <div class="container validation-grid">
+                <article class="validation-copy">
+                    <p class="eyebrow">Validaci&oacute;n</p>
+                    <h2>Construimos en base a procesos reales, no teor&iacute;a</h2>
+                    <p>
+                        Estamos trabajando con empresas reales y profesionales del sector en operaciones locales,
+                        entretenimiento, ventas y gesti&oacute;n de Talento.
+                    </p>
+                </article>
+                <div class="validation-list">
+                    <div class="validation-item">
+                        <i class="fa-solid fa-store"></i>
+                        <p>Operaciones locales de entretenimiento y ventas.</p>
                     </div>
-                    <div class="contact-info">
+                    <div class="validation-item">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <p>Colaboraci&oacute;n con responsables de RRHH en miner&iacute;a y retail: como cadenas de
+                            cines.</p>
+                    </div>
+                    <div class="validation-item">
+                        <i class="fa-solid fa-gears"></i>
+                        <p>Desarrollo ajustado a flujos reales de operaci&oacute;n y control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container implementation-box">
+                <div>
+                    <p class="eyebrow">Implementaci&oacute;n</p>
+                    <h2>No solo desarrollamos software, lo hacemos funcionar contigo</h2>
+                </div>
+                <div class="implementation-steps">
+                    <span>Configuraci&oacute;n</span>
+                    <span>Capacitaci&oacute;n</span>
+                    <span>Acompa&ntilde;amiento</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="fama" class="section product-section fame-theme">
+            <div class="container product-layout">
+                <div class="product-copy">
+                    <p class="eyebrow">Fama</p>
+                    <h2>Controla reservas, consumo y ventas en un solo sistema</h2>
+                    <p class="lead">
+                        Fama ayuda a negocios como billar, entretenimiento y locales con alto flujo a operar con orden
+                        y control en tiempo real.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary">Solicitar demo gratuita</a>
+                </div>
+                <div class="product-showcase">
+                    <img src="static/img/P_Fama2.png" alt="Pantalla principal de Fama">
+                </div>
+            </div>
+            <div class="container content-columns">
+                <article class="content-card">
+                    <h3>Problema</h3>
+                    <ul class="feature-list">
+                        <li>Las reservas se manejan manualmente.</li>
+                        <li>Las ventas no est&aacute;n integradas.</li>
+                        <li>No hay control claro del consumo.</li>
+                        <li>Se pierde informaci&oacute;n.</li>
+                    </ul>
+                    <p class="panel-note">Resultado: desorden y p&eacute;rdida de dinero.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Soluci&oacute;n</h3>
+                    <ul class="feature-list">
+                        <li>Reservas de mesas, espacios y turnos.</li>
+                        <li>Ventas de productos y consumo.</li>
+                        <li>Control de operaci&oacute;n.</li>
+                        <li>Reportes claros.</li>
+                    </ul>
+                    <p class="panel-note">Todo en un solo sistema.</p>
+                </article>
+            </div>
+            <div class="container detail-grid">
+                <article class="detail-card">
+                    <h3>Beneficios</h3>
+                    <ul class="check-list">
+                        <li>Control del negocio en tiempo real.</li>
+                        <li>Menos errores en reservas.</li>
+                        <li>Mejor gesti&oacute;n del consumo.</li>
+                        <li>Informaci&oacute;n clara para decidir.</li>
+                    </ul>
+                </article>
+                <article class="detail-card">
+                    <h3>Para qui&eacute;n es</h3>
+                    <ul class="check-list">
+                        <li>Billar y entretenimiento.</li>
+                        <li>Gaming centers.</li>
+                        <li>Restaurantes simples.</li>
+                        <li>Negocios con reservas y consumo.</li>
+                    </ul>
+                </article>
+                <article class="detail-card">
+                    <h3>Implementaci&oacute;n</h3>
+                    <ul class="check-list">
+                        <li>Configuraci&oacute;n seg&uacute;n tu negocio.</li>
+                        <li>Capacitaci&oacute;n del equipo.</li>
+                        <li>Soporte continuo.</li>
+                    </ul>
+                </article>
+                <article class="detail-card testimonial-card">
+                    <h3>Prueba</h3>
+                    <blockquote>&ldquo;Ahora tenemos m&aacute;s orden en reservas y ventas&rdquo;.</blockquote>
+                    <p>Validado en un negocio local con operaci&oacute;n diaria.</p>
+                </article>
+            </div>
+            <div class="container cta-strip">
+                <h3>&iquest;Listo para ordenar la operaci&oacute;n de tu local?</h3>
+                <a href="#contacto" class="btn btn-primary">Agenda tu demo gratuita</a>
+            </div>
+        </section>
+
+        <section id="montana" class="section product-section montana-theme">
+            <div class="container product-layout">
+                <div class="product-copy">
+                    <p class="eyebrow">Montana</p>
+                    <h2>Controla tu proceso de RRHH desde el ingreso hasta la operaci&oacute;n</h2>
+                    <p class="lead">
+                        Montana es un sistema dise&ntilde;ado para empresas de miner&iacute;a y retail que necesitan
+                        control,
+                        trazabilidad y orden en su gesti&oacute;n de personal.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary">Solicitar demo gratuita</a>
+                </div>
+                <div class="product-showcase">
+                    <img src="static/img/P_Montana.png" alt="Pantalla principal de Montana">
+                </div>
+            </div>
+            <div class="container content-columns">
+                <article class="content-card">
+                    <h3>Problema</h3>
+                    <ul class="feature-list">
+                        <li>Procesos de selecci&oacute;n desordenados.</li>
+                        <li>Onboarding sin estructura.</li>
+                        <li>Control manual de accesos o autorizaciones internas.</li>
+                        <li>Informaci&oacute;n dispersa.</li>
+                    </ul>
+                    <p class="panel-note">Esto genera riesgo operativo y descontrol.</p>
+                </article>
+                <article class="content-card">
+                    <h3>Soluci&oacute;n</h3>
+                    <ul class="feature-list">
+                        <li>Reclutamiento centralizado.</li>
+                        <li>Onboarding estructurado.</li>
+                        <li>Procesos internos: Asistencia-Marcaciones, Desempeño, Desarrollo, Beneficios, Compensaciones
+                            y Offboarding.</li>
+                        <li>Base ordenada de personal.</li>
+                    </ul>
+                    <p class="panel-note">Todo con trazabilidad y control.</p>
+                </article>
+            </div>
+            <div class="container detail-grid">
+                <article class="detail-card">
+                    <h3>Beneficios</h3>
+                    <ul class="check-list">
+                        <li>Procesos ordenados.</li>
+                        <li>Control total del personal.</li>
+                        <li>Reducci&oacute;n de errores.</li>
+                        <li>Base para escalar a RRHH 360.</li>
+                    </ul>
+                </article>
+                <article class="detail-card">
+                    <h3>Para qui&eacute;n es</h3>
+                    <ul class="check-list">
+                        <li>Empresas mineras.</li>
+                        <li>Empresas de retail.</li>
+                        <li>Operaciones con alto control de personal.</li>
+                    </ul>
+                </article>
+                <article class="detail-card">
+                    <h3>Validaci&oacute;n</h3>
+                    <p>Construido con input de profesionales de RRHH del sector miner&iacute;a y retail, incluyendo
+                        cadenas de cines.
+                    </p>
+                    <p class="panel-note">Adaptado a procesos reales.</p>
+                </article>
+                <article class="detail-card">
+                    <h3>Escalabilidad</h3>
+                    <ul class="check-list">
+                        <li>Asistencia.</li>
+                        <li>Comedores.</li>
+                        <li>Transporte.</li>
+                        <li>Alojamiento.</li>
+                        <li>Planilla.</li>
+                        <li>Desvinculaci&oacute;n.</li>
+                    </ul>
+                    <p class="panel-note">Todo en un solo sistema.</p>
+                </article>
+            </div>
+            <div class="container cta-strip">
+                <h3>&iquest;Quieres ordenar tu &aacute;rea de RRHH con trazabilidad real?</h3>
+                <a href="#contacto" class="btn btn-primary">Agenda tu demo gratuita</a>
+            </div>
+        </section>
+
+        <section class="section final-cta">
+            <div class="container final-cta-box">
+                <div>
+                    <p class="eyebrow">CTA</p>
+                    <h2>&iquest;Quieres ordenar tu operaci&oacute;n o tu &aacute;rea de RRHH?</h2>
+                    <p>Te mostramos cu&aacute;l de nuestras soluciones se adapta mejor a tu negocio.</p>
+                </div>
+                <a href="#contacto" class="btn btn-primary">Agenda una demo gratuita</a>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact-section">
+            <div class="container contact-layout">
+                <div class="contact-copy">
+                    <p class="eyebrow">Contacto</p>
+                    <h2>Conversemos sobre tu operaci&oacute;n</h2>
+                    <p>
+                        Si necesitas ordenar reservas, ventas, consumo o procesos de RRHH, podemos ayudarte a llevarlo
+                        a un sistema claro y usable.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/51940614160?text=Hola%20quiero%20informacion" target="_blank"
+                            rel="noreferrer">+51 940614160</a>
+                    </div>
+                    <div class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
                         <div>
-                            <p class="label">Para Proyectos:</p>
+                            <span>Proyectos</span>
                             <p>projects@buhmancompany.com</p>
                         </div>
                     </div>
-                    <div class="contact-info">
-                        <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope-open-text"></i>
                         <div>
-                            <p class="label">Para Soporte:</p>
+                            <span>Soporte</span>
                             <p>consultas@buhmancompany.com</p>
                         </div>
                     </div>
-                    <div class="contact-info">
-                        <i class="fa-solid fa-home"></i>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-globe"></i>
                         <p>https://buhmancompany.com</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <div class="footer">
-
-
-        <div class="center full-width">
-            <div class="row">
-                <h3>Síguenos</h3>
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <h3>B&uuml;hman</h3>
+                <p>Sistemas para ordenar Operaciones y Talento</p>
             </div>
-        </div>
-        <div class="center full-width">
-            <div class="row">
-                <h5>También puedes seguirnos en nuestras redes sociales.</h5>
-            </div>
-        </div>
-        <div class="center full-width social-links">
-            <div class="row">
-                <a href="https://www.linkedin.com/company/buhman-it" target="_blank">
-                    <img class="social" src="static/img/i-linkedin.png" alt="">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/buhman-it" target="_blank" rel="noreferrer"
+                    aria-label="LinkedIn">
+                    <img class="social" src="static/img/i-linkedin.png" alt="LinkedIn">
                 </a>
-                <a href="https://web.facebook.com/buhman.iternational" target="_blank">
-                    <img class="social" src="static/img/i-facebook.png" alt="">
+                <a href="https://web.facebook.com/buhman.iternational" target="_blank" rel="noreferrer"
+                    aria-label="Facebook">
+                    <img class="social" src="static/img/i-facebook.png" alt="Facebook">
                 </a>
-                <a href="https://www.tiktok.com/@buhman.company" target="_blank">
-                    <img class="social" src="static/img/i-tktk.png" alt="">
+                <a href="https://www.tiktok.com/@buhman.company" target="_blank" rel="noreferrer" aria-label="TikTok">
+                    <img class="social" src="static/img/i-tktk.png" alt="TikTok">
                 </a>
-
             </div>
         </div>
-
-        <div class="made-with">
-            <div class="row">
-                <h5>Copyright © Bühman International Technologies 2025.
-                </h5>
-            </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; B&uuml;hman International Technologies 2026.</p>
         </div>
-    </div>
-
+    </footer>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
